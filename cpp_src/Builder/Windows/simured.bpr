@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="simured.exe"/>
+    <OBJFILES value="obj\simured.obj obj\simuredunit.obj obj\dibujounit.obj obj\graficounit.obj 
+      obj\red.obj"/>
+    <RESFILES value="simured.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\Common\simuredunit.dfm ..\Common\dibujounit.dfm 
+      ..\Common\graficounit.dfm"/>
+    <LIBFILES value="..\Common\pthreadVC2.lib"/>
+    <LIBRARIES value="tee.lib vcl.lib visualclx.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib visualclx.lib vcl.lib tee.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi adortl.bpi 
+      ibsmp.bpi bdertl.bpi vcldbx.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      dss.bpi teeqr.bpi ibxpress.bpi dsnap.bpi vclie.bpi inetdb.bpi inet.bpi 
+      nmfast.bpi bcbie.bpi dclocx.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\Common;..\Common;..\Common;..\..\Common"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="WINDOWS"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="simured.cpp"/>
+    <INCLUDEPATH value="..\Common;..\..\Common;&quot;C:\Archivos de programa\Borland\CBuilder5\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\Common;..\..\Common;&quot;C:\Archivos de programa\Borland\CBuilder5\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w8092 -w8091 -w8090 -w8089 -w8087 -wprc -wuse -wucp -wstv -wstu -wsig 
+      -wpin -w-par -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -Q -Vx -Ve -X- -a8 -5 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2.\obj -N0.\obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I.\obj -D&quot;&quot; -aa -Tpe -x -Gn -w"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="simured.cpp" FORMNAME="" UNITNAME="simured" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="simured.res" FORMNAME="" UNITNAME="simured" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common\simuredunit.cpp" FORMNAME="FPrincipal" UNITNAME="simuredunit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common\dibujounit.cpp" FORMNAME="FDibujo" UNITNAME="dibujounit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common\graficounit.cpp" FORMNAME="FGrafico" UNITNAME="graficounit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\Common\red.cpp" FORMNAME="" UNITNAME="red" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common\pthreadVC2.lib" FORMNAME="" UNITNAME="pthreadVC2.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=3082
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files (x86)\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=..\Common;..\..\Common;C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\Common;..\..\Common\;C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\Common\;C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item3=C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=..\Common;..\..\Common;C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\Common;..\..\Common\;C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Archivos de programa\Borland\CBuilder5\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=WINDOWS
+Item1=WINDOWS;_DEBUG
+Item2=WINDOWS;PTW32_STATIC_LIB;_DEBUG
+Item3=WINDOWS;PTW32_STATIC_LIB
+Item4=_DEBUG;WINDOWS
+Item5=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=.\obj
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>

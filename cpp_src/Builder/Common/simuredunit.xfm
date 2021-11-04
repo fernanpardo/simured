@@ -1,0 +1,1348 @@
+object FPrincipal: TFPrincipal
+  Left = 219
+  Top = 106
+  Width = 465
+  Height = 602
+  HorzScrollBar.Range = 457
+  VertScrollBar.Range = 313
+  ActiveControl = TxtSal
+  AutoScroll = False
+  Caption = 'SimuRed'
+  Color = clButton
+  Font.Color = clBlack
+  Font.Height = 11
+  Font.Name = 'Helvetica'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  ParentFont = False
+  Position = poDefaultPosOnly
+  OnClose = FormClose
+  PixelsPerInch = 81
+  TextHeight = 13
+  TextWidth = 5
+  object MultiPages: TPageControl
+    Left = 8
+    Top = 0
+    Width = 449
+    Height = 313
+    ActivePage = RedTab
+    MultiLine = True
+    TabOrder = 1
+    object RedTab: TTabSheet
+      Caption = 'Red'
+      object GroupBoxRed: TGroupBox
+        Left = 8
+        Top = 0
+        Width = 425
+        Height = 113
+        Caption = 'Topolog'#237'a'
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 64
+          Top = 16
+          Width = 58
+          Height = 13
+          Caption = 'Dimensiones'
+        end
+        object Label3: TLabel
+          Left = 360
+          Top = 16
+          Width = 39
+          Height = 13
+          Caption = 'Virtuales'
+        end
+        object Label4: TLabel
+          Left = 256
+          Top = 16
+          Width = 53
+          Height = 13
+          Caption = 'Lon. Buffer'
+        end
+        object Label2: TLabel
+          Left = 160
+          Top = 16
+          Width = 52
+          Height = 13
+          Caption = 'Nodos/Dim'
+        end
+        object LabelInj: TLabel
+          Left = 160
+          Top = 64
+          Width = 85
+          Height = 13
+          Caption = 'Injection Channels'
+        end
+        object LabelEje: TLabel
+          Left = 288
+          Top = 64
+          Width = 83
+          Height = 13
+          Caption = 'Ejection Channels'
+        end
+        object DimTxt: TComboBox
+          Left = 64
+          Top = 32
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9')
+          ItemIndex = 1
+          TabOrder = 3
+          Text = '2'
+          OnChange = DimTxtChange
+        end
+        object NodosTxt: TComboBox
+          Left = 160
+          Top = 32
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '2'
+            '4'
+            '6'
+            '8'
+            '12'
+            '16'
+            '24'
+            '32'
+            '48'
+            '64'
+            '96'
+            '128'
+            '192'
+            '256')
+          ItemIndex = 1
+          TabOrder = 5
+          Text = '4'
+          OnChange = DimTxtChange
+        end
+        object VirtualesTxt: TComboBox
+          Left = 352
+          Top = 32
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 2
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+        object FifoTxt: TComboBox
+          Left = 256
+          Top = 32
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '6'
+            '8'
+            '12'
+            '16'
+            '24'
+            '32'
+            '48'
+            '64'
+            '96'
+            '128'
+            '192'
+            '256')
+          ItemIndex = 1
+          TabOrder = 4
+          Text = '2'
+          OnChange = DimTxtChange
+        end
+        object BidirCheck: TCheckBox
+          Left = 16
+          Top = 56
+          Width = 137
+          Height = 17
+          Caption = 'Bidireccional'
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+        end
+        object AdelantoCheck: TCheckBox
+          Left = 16
+          Top = 72
+          Width = 137
+          Height = 17
+          Caption = 'Adelanto en Buffer'
+          Checked = True
+          State = cbChecked
+          TabOrder = 1
+        end
+        object FisicoCheck: TCheckBox
+          Left = 16
+          Top = 88
+          Width = 121
+          Height = 17
+          Caption = 'Canales F'#237'sicos'
+          TabOrder = 6
+        end
+        object VirtInjTxt: TComboBox
+          Left = 176
+          Top = 80
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 7
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+        object VirtEjeTxt: TComboBox
+          Left = 296
+          Top = 80
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 8
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+      end
+      object GroupBoxRet: TGroupBox
+        Left = 8
+        Top = 120
+        Width = 425
+        Height = 57
+        Caption = 'Retrasos'
+        TabOrder = 1
+        object Label5: TLabel
+          Left = 80
+          Top = 8
+          Width = 29
+          Height = 13
+          Caption = 'Buffer'
+        end
+        object Label6: TLabel
+          Left = 168
+          Top = 8
+          Width = 44
+          Height = 13
+          Caption = 'CrossBar'
+        end
+        object Label7: TLabel
+          Left = 256
+          Top = 8
+          Width = 61
+          Height = 13
+          Caption = 'Conmutaci'#243'n'
+        end
+        object Label8: TLabel
+          Left = 368
+          Top = 8
+          Width = 26
+          Height = 13
+          Caption = 'Canal'
+        end
+        object LatCrossTxt: TComboBox
+          Left = 160
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 3
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+        object LatConmutTxt: TComboBox
+          Left = 256
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 0
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+        object LatCanalTxt: TComboBox
+          Left = 352
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 1
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+        object LatFifoTxt: TComboBox
+          Left = 64
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16')
+          TabOrder = 2
+          Text = '1'
+          OnChange = DimTxtChange
+        end
+      end
+      object GroupBoxConmut: TGroupBox
+        Left = 8
+        Top = 184
+        Width = 425
+        Height = 41
+        Caption = 'Conmutaci'#243'n'
+        TabOrder = 2
+        object ConmutTxt: TComboBox
+          Left = 224
+          Top = 12
+          Width = 193
+          Height = 21
+          Style = csDropDownList
+          ItemHeight = 15
+          Items.Strings = (
+            'Wormhole')
+          TabOrder = 0
+        end
+      end
+      object GroupBoxEncam: TGroupBox
+        Left = 8
+        Top = 232
+        Width = 425
+        Height = 49
+        Caption = 'Encaminamiento'
+        TabOrder = 3
+        object RoutingTxt: TComboBox
+          Left = 64
+          Top = 20
+          Width = 353
+          Height = 21
+          Style = csDropDownList
+          ItemHeight = 15
+          Items.Strings = (
+            'Orden de Dimensi'#243'n (XY) en mallas (determinista)'
+            'Orden de Dimensi'#243'n (XY) en toros (tiene bloqueos mortales)'
+            'Duato basado en XY para mallas (adaptativo)'
+            'Completamente Adaptativo para mallas (tiene bloqueos)')
+          TabOrder = 0
+        end
+      end
+    end
+    object PaqueteTab: TTabSheet
+      Caption = 'Paquetes'
+      ImageIndex = 1
+      object GroupBoxPaq: TGroupBox
+        Left = 8
+        Top = 8
+        Width = 425
+        Height = 49
+        Caption = 'Paquete'
+        TabOrder = 0
+        object Label10: TLabel
+          Left = 80
+          Top = 8
+          Width = 64
+          Height = 13
+          Caption = 'Flits de Datos'
+        end
+        object Label14: TLabel
+          Left = 224
+          Top = 8
+          Width = 79
+          Height = 13
+          Caption = 'Flits de Cabecera'
+        end
+        object LonPaqTxt: TComboBox
+          Left = 80
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 12
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '4'
+            '8'
+            '16'
+            '32'
+            '64'
+            '128'
+            '256'
+            '512'
+            '1024')
+          ItemIndex = 6
+          TabOrder = 0
+          Text = '64'
+          OnChange = DimTxtChange
+        end
+        object LonCabTxt: TComboBox
+          Left = 232
+          Top = 24
+          Width = 65
+          Height = 21
+          DropDownCount = 9
+          ItemHeight = 15
+          Items.Strings = (
+            '0'
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8')
+          TabOrder = 1
+          Text = '0'
+          OnChange = DimTxtChange
+        end
+      end
+      object GroupBoxGenPaq: TGroupBox
+        Left = 8
+        Top = 64
+        Width = 425
+        Height = 81
+        Caption = 'Generaci'#243'n de Paquetes'
+        TabOrder = 1
+        object TrazasCheck: TCheckBox
+          Left = 184
+          Top = 16
+          Width = 233
+          Height = 17
+          Caption = 'Obtener Paquetes de un fichero de trazas'
+          TabOrder = 0
+          OnClick = TrazasCheckClick
+        end
+        object Button3: TButton
+          Left = 8
+          Top = 24
+          Width = 169
+          Height = 25
+          Caption = 'Especificar Fichero de trazas'
+          TabOrder = 1
+          OnClick = Button3Click
+        end
+        object TrazaFichTxt: TComboBox
+          Left = 8
+          Top = 56
+          Width = 409
+          Height = 21
+          Hint = '(vac'#237'o)'
+          Style = csDropDownList
+          ItemHeight = 15
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+        end
+        object LongitCheck: TCheckBox
+          Left = 184
+          Top = 32
+          Width = 161
+          Height = 17
+          Caption = 'No leer las longitudes'
+          Enabled = False
+          TabOrder = 3
+        end
+      end
+      object GroupBoxGenAut: TGroupBox
+        Left = 8
+        Top = 152
+        Width = 425
+        Height = 73
+        Caption = 'Generaci'#243'n Autom'#225'tica'
+        TabOrder = 2
+        object Label12: TLabel
+          Left = 184
+          Top = 24
+          Width = 149
+          Height = 13
+          Caption = 'Productividad (Flits/Ciclo/Nodo)'
+        end
+        object NumFlitTxt: TComboBox
+          Left = 8
+          Top = 16
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '10'
+            '20'
+            '50'
+            '100'
+            '200'
+            '500'
+            '1000'
+            '2000'
+            '5000'
+            '10000')
+          TabOrder = 1
+          Text = '1'
+          OnChange = NumFlitTxtChange
+        end
+        object NumPaqTxt: TComboBox
+          Left = 8
+          Top = 40
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '100'
+            '500'
+            '1000'
+            '2000'
+            '4000'
+            '8000')
+          ItemIndex = 4
+          TabOrder = 0
+          Text = '2000'
+          OnChange = NumPaqTxtChange
+        end
+        object NumFlitsRad: TRadioButton
+          Left = 72
+          Top = 24
+          Width = 81
+          Height = 17
+          Caption = 'Flits/Nodo'
+          TabOrder = 2
+          TabStop = False
+        end
+        object NumPaqRad: TRadioButton
+          Left = 72
+          Top = 48
+          Width = 81
+          Height = 17
+          Caption = 'Paquetes'
+          Checked = True
+          TabOrder = 3
+        end
+        object EmisionTxt: TComboBox
+          Left = 224
+          Top = 40
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '0.001'
+            '0.005'
+            '0.01'
+            '0.05'
+            '0.1'
+            '0.3'
+            '0.5'
+            '0.8'
+            '1.0'
+            '1.5'
+            '2.0')
+          ItemIndex = 5
+          TabOrder = 4
+          Text = '0.3'
+          OnChange = EmisionTxtChange
+        end
+      end
+      object GroupBoxDummy: TGroupBox
+        Left = 8
+        Top = 232
+        Width = 425
+        Height = 49
+        Caption = 'Calentamiento'
+        TabOrder = 3
+        object Label25: TLabel
+          Left = 96
+          Top = 24
+          Width = 42
+          Height = 13
+          Caption = 'Paquetes'
+        end
+        object DummyUpPackTxt: TComboBox
+          Left = 24
+          Top = 20
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '0'
+            '100'
+            '500'
+            '1000'
+            '2000'
+            '4000'
+            '8000')
+          TabOrder = 0
+          Text = '0'
+          OnChange = DummyUpPackTxtChange
+        end
+      end
+    end
+    object SimuMultTab: TTabSheet
+      Caption = 'Simulaci'#243'n'
+      ImageIndex = 3
+      object bGo: TButton
+        Left = 224
+        Top = 240
+        Width = 113
+        Height = 25
+        Caption = 'Simulaci'#243'n M'#250'ltiple'
+        TabOrder = 0
+        OnClick = bGoClick
+      end
+      object bDetener: TButton
+        Left = 344
+        Top = 240
+        Width = 89
+        Height = 25
+        Caption = 'Interrumpir'
+        Enabled = False
+        TabOrder = 1
+        OnClick = bDetenerClick
+      end
+      object GroupBoxPrim: TGroupBox
+        Left = 8
+        Top = 0
+        Width = 209
+        Height = 161
+        Caption = 'Primera Variable'
+        TabOrder = 2
+        object Label11: TLabel
+          Left = 16
+          Top = 72
+          Width = 25
+          Height = 13
+          Caption = 'Inicial'
+        end
+        object Label18: TLabel
+          Left = 88
+          Top = 72
+          Width = 21
+          Height = 13
+          Caption = 'Final'
+        end
+        object Label19: TLabel
+          Left = 152
+          Top = 72
+          Width = 33
+          Height = 13
+          Caption = 'Puntos'
+        end
+        object EscalaRad: TRadioGroup
+          Left = 8
+          Top = 16
+          Width = 193
+          Height = 57
+          Items.Strings = (
+            'Lineal'
+            'Logar'#237'tmica')
+          Caption = 'Escala'
+          TabOrder = 0
+        end
+        object IniTxt: TComboBox
+          Left = 8
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '0.001'
+            '0.002'
+            '0.005'
+            '0.01'
+            '0.02'
+            '0.05'
+            '0.1'
+            '0.2'
+            '0.5'
+            '1.0'
+            '1.5'
+            '2.0')
+          ItemIndex = 5
+          TabOrder = 4
+          Text = '0.05'
+          OnChange = EmisionTxtChange
+        end
+        object FinTxt: TComboBox
+          Left = 72
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '0.01'
+            '0.02'
+            '0.05'
+            '0.1'
+            '0.2'
+            '0.5'
+            '1.0'
+            '1.5'
+            '2.0')
+          ItemIndex = 6
+          TabOrder = 2
+          Text = '1.0'
+          OnChange = EmisionTxtChange
+        end
+        object PuntosTxt: TComboBox
+          Left = 136
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '8'
+            '10'
+            '12'
+            '15'
+            '20'
+            '25'
+            '30'
+            '50'
+            '100')
+          ItemIndex = 4
+          TabOrder = 3
+          Text = '5'
+          OnChange = EmisionTxtChange
+        end
+        object VariableRad: TRadioGroup
+          Left = 8
+          Top = 112
+          Width = 193
+          Height = 41
+          Items.Strings = (
+            'Productividad (flits/ciclo/nodo)')
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Caption = 'Primera Variable'
+          TabOrder = 1
+        end
+      end
+      object GroupBoxSec: TGroupBox
+        Left = 224
+        Top = 0
+        Width = 209
+        Height = 225
+        Caption = 'Segunda Variable'
+        TabOrder = 3
+        object Label9: TLabel
+          Left = 16
+          Top = 72
+          Width = 25
+          Height = 13
+          Caption = 'Inicial'
+        end
+        object Label15: TLabel
+          Left = 88
+          Top = 72
+          Width = 21
+          Height = 13
+          Caption = 'Final'
+        end
+        object Label16: TLabel
+          Left = 152
+          Top = 72
+          Width = 33
+          Height = 13
+          Caption = 'Puntos'
+        end
+        object EscalaRad2: TRadioGroup
+          Left = 8
+          Top = 16
+          Width = 193
+          Height = 57
+          Items.Strings = (
+            'Lineal'
+            'Logar'#237'tmica')
+          Caption = 'Escala'
+          TabOrder = 0
+        end
+        object Ini2Txt: TComboBox
+          Left = 8
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '6'
+            '8'
+            '12'
+            '16'
+            '24'
+            '32'
+            '48'
+            '64'
+            '96'
+            '128'
+            '256')
+          TabOrder = 4
+          Text = '1'
+          OnChange = EmisionTxtChange
+        end
+        object Fin2Txt: TComboBox
+          Left = 72
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '6'
+            '8'
+            '12'
+            '16'
+            '24'
+            '32'
+            '48'
+            '64'
+            '96'
+            '128'
+            '256')
+          ItemIndex = 7
+          TabOrder = 2
+          Text = '16'
+          OnChange = EmisionTxtChange
+        end
+        object Puntos2Txt: TComboBox
+          Left = 136
+          Top = 88
+          Width = 65
+          Height = 21
+          DropDownCount = 20
+          ItemHeight = 15
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '8'
+            '10'
+            '12'
+            '15'
+            '20'
+            '25'
+            '30'
+            '50'
+            '100')
+          ItemIndex = 4
+          TabOrder = 3
+          Text = '5'
+          OnChange = EmisionTxtChange
+        end
+        object Variable2Rad: TRadioGroup
+          Left = 8
+          Top = 112
+          Width = 193
+          Height = 105
+          Items.Strings = (
+            'Ninguna'
+            'Dimensiones'
+            'Nodos por dimensi'#243'n'
+            'Longitud Buffer'
+            'Canales Virtuales')
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Caption = 'Segunda Variable'
+          TabOrder = 1
+        end
+      end
+      object Interact: TCheckBox
+        Left = 8
+        Top = 272
+        Width = 209
+        Height = 17
+        Caption = 'Habilitar simulaci'#243'n simple/interactiva'
+        TabOrder = 4
+        Visible = False
+        OnClick = InteractClick
+      end
+      object ButtonEnaSimple: TButton
+        Left = 8
+        Top = 240
+        Width = 209
+        Height = 25
+        Caption = 'Open Simple/Interactive Simulation'
+        TabOrder = 5
+        OnClick = ButtonEnaSimpleClick
+      end
+      object RadStopSim: TRadioGroup
+        Left = 8
+        Top = 168
+        Width = 209
+        Height = 57
+        Items.Strings = (
+          'when all packets arrived'
+          'when all packets emmited')
+        Caption = 'Stop Simulation'
+        TabOrder = 6
+      end
+    end
+    object GrafTab: TTabSheet
+      Caption = 'Results'
+      ImageIndex = 4
+      object GroupBoxGraf: TGroupBox
+        Left = 8
+        Top = 136
+        Width = 425
+        Height = 145
+        Caption = 'Gr'#225'fico'
+        TabOrder = 0
+        object Label24: TLabel
+          Left = 8
+          Top = 104
+          Width = 24
+          Height = 13
+          Caption = 'Eje Y'
+        end
+        object Label22: TLabel
+          Left = 8
+          Top = 64
+          Width = 24
+          Height = 13
+          Caption = 'Eje X'
+        end
+        object Ytxt: TComboBox
+          Left = 8
+          Top = 120
+          Width = 409
+          Height = 21
+          ItemHeight = 15
+          TabOrder = 0
+          OnChange = YtxtChange
+        end
+        object Xtxt: TComboBox
+          Left = 8
+          Top = 80
+          Width = 409
+          Height = 21
+          ItemHeight = 15
+          TabOrder = 1
+          OnChange = XtxtChange
+        end
+        object Button1: TButton
+          Left = 56
+          Top = 40
+          Width = 129
+          Height = 25
+          Caption = 'Cargar Fichero CSV'
+          TabOrder = 2
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Left = 208
+          Top = 40
+          Width = 145
+          Height = 25
+          Caption = 'Recargar/Mostrar Gr'#225'fico'
+          TabOrder = 3
+          OnClick = Button2Click
+        end
+        object GrafTxt: TComboBox
+          Left = 8
+          Top = 16
+          Width = 409
+          Height = 21
+          Hint = '(vac'#237'o)'
+          Style = csDropDownList
+          ItemHeight = 15
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 4
+          OnChange = GrafTxtChange
+        end
+      end
+      object GroupBoxRes: TGroupBox
+        Left = 8
+        Top = 8
+        Width = 425
+        Height = 129
+        Caption = 'Guardar resultados'
+        TabOrder = 1
+        object GuardarCheck: TCheckBox
+          Left = 8
+          Top = 16
+          Width = 209
+          Height = 17
+          Anchors = [akLeft, akBottom]
+          Caption = 'Guardar Resultados en un Fichero'
+          TabOrder = 0
+          OnClick = GuardarCheckClick
+        end
+        object AnyadeCheck: TCheckBox
+          Left = 8
+          Top = 40
+          Width = 185
+          Height = 17
+          Caption = 'A'#241'ade los resultados al fichero'
+          Enabled = False
+          TabOrder = 1
+        end
+        object Button4: TButton
+          Left = 8
+          Top = 72
+          Width = 185
+          Height = 25
+          Caption = 'Especificar Fichero de Resultados'
+          TabOrder = 2
+          OnClick = Button4Click
+        end
+        object ResultFichTxt: TComboBox
+          Left = 8
+          Top = 100
+          Width = 409
+          Height = 21
+          Hint = '(vac'#237'o)'
+          Style = csDropDownList
+          ItemHeight = 15
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+        end
+        object GroupBoxStats: TGroupBox
+          Left = 208
+          Top = 8
+          Width = 209
+          Height = 89
+          Caption = 'Stats'
+          TabOrder = 4
+          object Label26: TLabel
+            Left = 112
+            Top = 64
+            Width = 33
+            Height = 13
+            Hint = 'Puntos'
+            Caption = 'Puntos'
+          end
+          object RadFinal: TRadioButton
+            Left = 8
+            Top = 16
+            Width = 113
+            Height = 17
+            Caption = 'Final'
+            Checked = True
+            Enabled = False
+            TabOrder = 0
+            OnClick = RadContinuousClick
+          end
+          object RadContinuous: TRadioButton
+            Left = 8
+            Top = 32
+            Width = 113
+            Height = 17
+            Caption = 'Continuous'
+            Enabled = False
+            TabOrder = 1
+            OnClick = RadContinuousClick
+          end
+          object StatPointsTxt: TComboBox
+            Left = 8
+            Top = 56
+            Width = 97
+            Height = 21
+            Enabled = False
+            ItemHeight = 15
+            Items.Strings = (
+              '1'
+              '50'
+              '100'
+              '500'
+              '1000'
+              '5000'
+              '10000'
+              '50000')
+            ItemIndex = 2
+            TabOrder = 2
+            Text = '100'
+            OnChange = StatPointsTxtChange
+          end
+        end
+      end
+    end
+    object MiscTab: TTabSheet
+      Caption = 'Misc.'
+      ImageIndex = 4
+      object GroupBox9: TGroupBox
+        Left = 8
+        Top = 112
+        Width = 425
+        Height = 169
+        Caption = 'Info'
+        TabOrder = 0
+        object Label17: TLabel
+          Left = 32
+          Top = 16
+          Width = 134
+          Height = 38
+          Caption = 'SimuRed'
+          Color = clButton
+          Font.Color = clBlue
+          Font.Height = 35
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label13: TLabel
+          Left = 32
+          Top = 56
+          Width = 173
+          Height = 20
+          Caption = 'Universidad de Valencia'
+          Font.Color = clText
+          Font.Height = 16
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label20: TLabel
+          Left = 32
+          Top = 80
+          Width = 141
+          Height = 20
+          Caption = 'http://simured.uv.es'
+          Font.Color = clText
+          Font.Height = 16
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label21: TLabel
+          Left = 32
+          Top = 105
+          Width = 171
+          Height = 20
+          Caption = 'Fernando.Pardo@uv.es'
+          Font.Color = clText
+          Font.Height = 16
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label23: TLabel
+          Left = 32
+          Top = 132
+          Width = 119
+          Height = 15
+          Caption = 'v 2.1 november 2005'
+          Font.Color = clText
+          Font.Height = 13
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object IdiomaRad: TRadioGroup
+        Left = 8
+        Top = 8
+        Width = 425
+        Height = 97
+        Items.Strings = (
+          'Espa'#241'ol'
+          'Ingl'#233's')
+        Caption = 'Idioma'
+        TabOrder = 1
+        OnClick = IdiomaRadClick
+      end
+    end
+  end
+  object TxtSal: TMemo
+    Left = 8
+    Top = 320
+    Width = 449
+    Height = 273
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Font.Color = clText
+    Font.Height = 11
+    Font.Name = 'Courier'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object OpenFichDialog: TOpenDialog
+    DefaultExt = 'csv'
+    Filter = 'CSV (*.csv)|*csv|All (*.*)|*.*'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Open'
+    Width = 0
+    Left = 392
+  end
+  object OpenTrazaDiag: TOpenDialog
+    DefaultExt = 'trc'
+    Filter = 'Traces (*.trc)|*.trc|All (*.*)|*.*'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Open'
+    Width = 0
+    Left = 360
+  end
+  object OpenGrafDialog: TOpenDialog
+    DefaultExt = 'csv'
+    Filter = 'CSV (*.csv)|*csv|All (*.*)|*.*'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Open'
+    Width = 0
+    Left = 424
+  end
+end

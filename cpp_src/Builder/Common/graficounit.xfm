@@ -1,0 +1,26 @@
+object FGrafico: TFGrafico
+  Left = 188
+  Top = 154
+  Width = 594
+  Height = 461
+  Caption = 'Chart'
+  Color = clButton
+  Font.Color = clText
+  Font.Height = 11
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  ParentFont = False
+  Position = poDefaultPosOnly
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 5
+  object Grafico: TPaintBox
+    Left = 0
+    Top = 0
+    Width = 593
+    Height = 457
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    OnPaint = GraficoPaint
+  end
+end

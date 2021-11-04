@@ -1,0 +1,7 @@
+# <ciclo | p<packId>> <orig> <dest> [long] [p<packId>] 
+1 2 8 p1234
+p1234 3 4 
+p1234 5 6 p2345
+p1234 7 8
+p2345 2 8
+p2345 1 8
