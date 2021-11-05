@@ -19,3 +19,5 @@ COMMAND version
 
 This is a simple front-end version (no visual interface) of the simulator with the same functionality.
 It is specially interesting since it can be compiled in almost any platform with a C++ compiler.
+
+2021 Fernando Pardo

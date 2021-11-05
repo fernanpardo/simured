@@ -1,8 +1,6 @@
 /*
  * JsimuredJava.java
  * Main Class of the application
- * For Applet version search APPLET in the code (only one occurrence).
- *
  */
 package jsimured.main;
 
@@ -27,33 +25,8 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
-
-//#ifdef{APPLET}
-/*
- public class simuredJava extends javax.swing.JApplet{
- // Initializes the applet simuredJava
- public void init(){
-      java.awt.event.ActionEvent evt;
-        evt=null;
-        SimuStop =  true;
-        LaRedGlobal = null;
-        Continuar = 0;
-        AreaDibujo = null;
-        initComponents();
-        GraficoTab.setEnabled(false);
-        GuardarCheck.setEnabled(false);
-        RadFinal.setEnabled(false);
-        RadContinuous.setEnabled(false);
-        StatPointsTxt.setEnabled(false);
-        TrazasCheck.setEnabled(false);
-        jRadioButton14ActionPerformed(evt);
-    }
- */
-//#else // application
-
 public class Jsimured extends javax.swing.JFrame{
 //public class Jsimured extends javax.swing.JApplet{
-    
     // User Declarations
     //public Red LaRedGlobal;
     public static ArrayList Simulaciones; // esto no se bien para que un array...
@@ -156,9 +129,8 @@ public class Jsimured extends javax.swing.JFrame{
     {
         Jsimured.SimuControl.Write(0);
         new Thread(Jsimured.Simular).start();
-        // FER creo que aqu� deber�a esperar a que acabe el thread y luego salir del sistema
+        // FER creo que aqui deberia esperar a que acabe el thread y luego salir del sistema
         // pues resulta que no lo puedo hacer aqui; debe ser el propio htread de simular el que salga del sistema si es comando...
-
     }
     // estos no hacen falta si comando... FER
     elDibujo=new Dibujo();
@@ -171,9 +143,7 @@ public class Jsimured extends javax.swing.JFrame{
     GrafTxt.addItem(fichero);
     GrafTxt.setSelectedItem(fichero);
   }
-  
-//#endif
-  
+    
   /** This method is called from within the init() method to
    * initialize the form.
    * WARNING: Do NOT modify this code. The content of this method is
