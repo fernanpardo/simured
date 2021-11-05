@@ -1,15 +1,15 @@
 Simured
 =======
 
-This is the repository with the sources of the Computer Network Simulator Simured.
+This is the repository with the sources of the Simured Computer Network Simulator.
 Visit the home page at http://simured.uv.es
-Since version 3.1, the C++ version is not updated.
-Java version (Jsimured) is the only updated version.
-
+Java version (Jsimured) is the only updated and maintaned version. C++ version is not updated since v. 3.1.
 
 
 Directories 
 -----------
+
+Visit these directories to obtain further information about Simured:
 
 * [jsimured](jsimured): Contains the Java sources, multiplatform jar file and Windows binaries.
 * [cpp_src](cpp_src): Contains the C++ sources and C++ binaries for the Windows and Linux platforms.

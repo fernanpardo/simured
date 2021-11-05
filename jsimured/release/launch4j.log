@@ -1,0 +1,45 @@
+
+
+CmdLine:	C:\Users\pardo\Documents\Programas\simured\jsimured\final\jsimured.exe --l4j-debug
+WOW64:		yes
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_04
+Using 64-bit runtime.
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_04
+Using 64-bit runtime.
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-jar "C:\Users\pardo\Documents\Programas\simured\jsimured\final\jsimured.exe"
+Args length:	77/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\pardo\Documents\Programas\simured\jsimured\release\jsimured.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\pardo\Documents\Programas\simured\jsimured\release\.
+Java min ver:	1.006.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+32-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11
+Check launcher:	C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin\javaw.exe (OK)
+Match:		1.011.000
+Check:		SOFTWARE\JavaSoft\JDK\11.0.13.8
+Warning:	formatJavaVersion() too many parts added.
+Check launcher:	C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin\javaw.exe (OK)
+Match:		1.011.000_013
+Runtime used:	1.011.000_013 (64-bit)
+Launcher:	C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin\javaw.exe
+Launcher args:	-jar "C:\Users\pardo\Documents\Programas\simured\jsimured\release\jsimured.exe"
+Args length:	79/32768 chars
+Exit code:	0
